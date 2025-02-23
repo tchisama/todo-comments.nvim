@@ -29,6 +29,16 @@ local defaults = {
     PERF = { icon = " ", alt = { "OPTIM", "PERFORMANCE", "OPTIMIZE" } },
     NOTE = { icon = " ", color = "hint", alt = { "INFO" } },
     TEST = { icon = "⏲ ", color = "test", alt = { "TESTING", "PASSED", "FAILED" } },
+
+    -- my custom keywords
+
+    DEBUG = { icon = " ", color = "debug", alt = { "TRACE", "LOG" } },
+    DOCS = { icon = "", color = "hint", alt = { "DOCUMENT", "README" } }, -- For documentation-related comments
+    REFACTOR = { icon = " ", color = "warning", alt = { "REFACTORING", "CLEANUP" } }, -- When code needs refactoring
+    DEPRECATED = { icon = " ", color = "error", alt = { "REMOVE", "LEGACY" } }, -- Mark deprecated code
+    SECURITY = { icon = " ", color = "error", alt = { "SECURITY_RISK", "VULNERABILITY" } }, -- Security-related concerns
+    COMPAT = { icon = " ", color = "warning", alt = { "COMPATIBILITY", "BACKWARD" } }, -- Compatibility issues
+    IDEA = { icon = " ", color = "hint", alt = { "THOUGHT", "CONCEPT" } }, -- Notes for potential improvements
   },
   gui_style = {
     fg = "NONE", -- The gui style to use for the fg highlight group.
